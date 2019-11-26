@@ -9,8 +9,8 @@ LiquidCrystal_I2C lcd(0x27, 20, 4); // set the LCD address to 0x27 for a 20 char
 String level1Top = String("\x3\x3                     \x7            \x6\x3\x3"); // Level 1 top half of screen
 String level1Bot = String("\x3\x3____\x5\x5____\x4__\x7_\x4_\x5\x5\x7___\x5\x5\x5\x7____\x4__\x6\x3\x3"); // Level 1 bottom half of screen
 
-String level2Top = String("\x3\x3              \x3\x3"); // Level 2 top half of screen
-String level2Bot = String("\x3\x3______\x5_______\x3\x3"); // Level 2 bottom half of screen
+String level2Top = String("\x3\x3       \x4              \x4   _____  \x4   \x3\x3"); // Level 2 top half of screen
+String level2Bot = String("\x3\x3____\x4_____\x5__\x5\x5__\x4_\x4_____\x5      _____\x3\x3"); // Level 2 bottom half of screen
 
 String topDisplay; // Level substring currently at the top of the display
 String botDisplay; // Level substring currently at the bottom of the display
