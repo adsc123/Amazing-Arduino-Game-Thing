@@ -69,18 +69,18 @@ void reDraw () {
 }
 
 void drawLevel() {
-  oneDisplay = one.substring(screenPos,(screenPos+16)); // Get the top substring of the current position of the level (Level 1) 16 screen characters
-  twoDisplay = two.substring(screenPos,(screenPos+16)); // Get the bottom substring of the current position of the level (Level 1) 16 screen characters
-  threeDisplay = three.substring(screenPos,(screenPos+16));
-  fourDisplay = four.substring(screenPos,(screenPos+16));
+  oneDisplay = one.substring(screenPos,(screenPos+20)); // Get the top substring of the current position of the level (Level 1) 16 screen characters
+  twoDisplay = two.substring(screenPos,(screenPos+20)); // Get the bottom substring of the current position of the level (Level 1) 16 screen characters
+  threeDisplay = three.substring(screenPos,(screenPos+20));
+  fourDisplay = four.substring(screenPos,(screenPos+20));
   
-  lcd.setCursor(0,2);
+  lcd.setCursor(0,0);
   lcd.print(oneDisplay);
-  lcd.setCursor(1,2);
+  lcd.setCursor(0,1);
   lcd.print(twoDisplay);
-  lcd.setCursor(2,2);
+  lcd.setCursor(0,2);
   lcd.print(threeDisplay);
-  lcd.setCursor(3,2);
+  lcd.setCursor(0,3);
   lcd.print(fourDisplay);
 }
 
