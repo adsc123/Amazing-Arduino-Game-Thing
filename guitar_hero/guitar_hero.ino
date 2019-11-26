@@ -87,18 +87,10 @@ void drawLevel() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  one.remove(0);
-  one.remove(0);
-  one.remove(0);
-  two.remove(0);
-  two.remove(0);
-  two.remove(0);
-  three.remove(0);
-  three.remove(0);
-  three.remove(0);
-  four.remove(0);
-  four.remove(0);
-  four.remove(0);
+  one.remove(0, 3);
+  two.remove(0, 3);
+  three.remove(0, 3);
+  four.remove(0, 3);
   drawLevel();
   
 }
